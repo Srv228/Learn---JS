@@ -25,9 +25,6 @@ console.log(id === anotherId); //false
 
 
 
-
-
-
 // Reference Type (non primitive)
 
 
@@ -47,3 +44,42 @@ let myObj = {
 const myFunction = function() {
      console.log("Hello World");
 }
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) and Heap Memory (Non Primitive)
+
+
+let myLaptopName = "HP"
+
+
+let anotherName = myLaptopName
+
+anotherName = "Asus"
+
+console.log(anotherName);
+console.log(myLaptopName);
+
+
+
+let userOne = {
+    email:"deysourav756@gmail.com" ,
+    contact: 919191919
+}
+
+
+let userTwo = userOne
+
+userTwo.email = "deysourav2018@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
+
+
+// stack -> copy of variable  (change in copy not in original)
+// Heap -> Reference of variable (change in original value)
+
+
+
+
